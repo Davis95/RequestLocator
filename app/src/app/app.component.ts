@@ -19,11 +19,9 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
         this.clientInfo = this.geoIP.clientInfo;
-        console.log(this.clientInfo);
     }
 
     onNewDestInfo(event) {
         this.destInfo = event;
-        console.log(this.destInfo);
     }
 }
