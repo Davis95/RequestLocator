@@ -17,7 +17,7 @@ import { MapHeaderComponent } from './components/map-header/map-header.component
 import { DomainQueryComponent } from './components/domain-query/domain-query.component';
 
 export function initApp(geoIP: GeoipifyService) {
-    return () => {};//geoIP.init();
+    return () => geoIP.init();
 }
 
 @NgModule({

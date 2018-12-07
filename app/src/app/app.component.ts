@@ -13,11 +13,7 @@ export class AppComponent implements OnInit {
 
     public clientInfo: IpInfo;
 
-    public serverInfo: IpInfo;
-
-    // We use IP stack to query an IP address/domain name
-    // private ipStackUrl = 'http://api.ipstack.com/';
-    // private ipStackKey = 'a9c4d5d721bbbfaf5f326d582617a47b';
+    public destInfo: IpInfo;
 
     constructor(private geoIP: GeoipifyService) {}
 
@@ -26,7 +22,8 @@ export class AppComponent implements OnInit {
         console.log(this.clientInfo);
     }
 
-    handleClick(event: MouseEvent) {
-
+    onNewDestInfo(event) {
+        this.destInfo = event;
+        console.log(this.destInfo);
     }
 }

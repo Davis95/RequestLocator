@@ -25,7 +25,6 @@ export class IpInfoComponent implements OnChanges {
     public showChange = false;
 
     ngOnChanges(changes) {
-        console.log(changes);
         if (changes.info && !changes.info.firstChange) {
             this.showChange = true;
 

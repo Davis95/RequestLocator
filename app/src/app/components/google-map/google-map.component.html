@@ -1,6 +1,17 @@
 <div class="map-container">
-    <agm-map [streetViewControl]="false" [latitude]="clientLat" [longitude]="clientLng">
-        <agm-marker [latitude]="clientLat" [longitude]="clientLng"></agm-marker>
-        <agm-marker [latitude]="serverLat" [longitude]="serverLng"></agm-marker>
+    <agm-map [streetViewControl]="false"
+             [maxZoom]="17"
+             [fitBounds]="true"
+             [latitude]="destLat ? clientLat : null"
+             [longitude]="destLng ? clientLng : null">
+        <agm-marker [label]="clientLabel"
+                    [latitude]="clientLat"
+                    [longitude]="clientLng"
+                    [agmFitBounds]="true"></agm-marker>
+
+        <agm-marker [label]="destLabel"
+                    [latitude]="destLat"
+                    [longitude]="destLng"
+                    [agmFitBounds]="true"></agm-marker>
     </agm-map>
 </div>

@@ -1,7 +1,9 @@
 <app-app-bar></app-app-bar>
 <div class="app-container">
-    <app-map-header [clientInfo]="clientInfo"></app-map-header>
+    <app-map-header [clientInfo]="clientInfo" (newDestInfo)="onNewDestInfo($event)"></app-map-header>
     <app-google-map [clientLat]="clientInfo?.location.lat"
-                    [clientLng]="clientInfo?.location.lng">
+                    [clientLng]="clientInfo?.location.lng"
+                    [destLat]="destInfo?.location.lat"
+                    [destLng]="destInfo?.location.lng">
     </app-google-map>
 </div>
