@@ -292,6 +292,18 @@ Apache-2.0
 @angular/core
 MIT
 
+@angular/common
+MIT
+
+@angular/platform-browser
+MIT
+
+@angular/router
+MIT
+
+@angular/forms
+MIT
+
 @agm/core
 MIT
 The MIT License (MIT)
@@ -317,16 +329,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-@angular/common
-MIT
-
-@angular/platform-browser
-MIT
-
-@angular/router
-MIT
-
-@angular/forms
+@angular/animations
 MIT
 
 zone.js
