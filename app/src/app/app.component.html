@@ -1,6 +1,7 @@
-<input type="text" [(ngModel)]="query">
-<button (click)="handleClick($event)">Ping Server</button>
-    <agm-map #agmMap *ngIf="query" [streetViewControl]="false">
-        <agm-marker [latitude]="clientInfo?.lat" [longitude]="clientInfo?.long"></agm-marker>
-        <agm-marker [latitude]="serverInfo?.lat" [longitude]="serverInfo?.long"></agm-marker>
-    </agm-map>
+<app-app-bar></app-app-bar>
+<div class="app-container">
+    <app-map-header [clientInfo]="clientInfo"></app-map-header>
+    <app-google-map [clientLat]="clientInfo?.location.lat"
+                    [clientLng]="clientInfo?.location.lng">
+    </app-google-map>
+</div>

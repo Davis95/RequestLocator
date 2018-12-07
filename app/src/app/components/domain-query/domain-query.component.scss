@@ -1,0 +1,43 @@
+.domain-query-container {
+    border: black 2px solid;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+
+    .query-input {
+        background-color: antiquewhite;
+        border: lightslategrey 1px solid;
+        border-radius: 3px;
+        border-right: none;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .suggestion-title {
+        margin: 0px;
+    }
+
+    .suggestions {
+        text-align: left;
+        margin: 0;
+
+        li {
+            text-decoration: underline;
+            cursor: pointer;
+            width: fit-content;
+        }
+    }
+
+    .locate-button {
+        font-size: 15px;
+        border: black 1px solid;
+        cursor: pointer;
+        position: relative;
+        top: -1px;
+        height: 28px;
+        background-color: lightcoral;
+    }
+}

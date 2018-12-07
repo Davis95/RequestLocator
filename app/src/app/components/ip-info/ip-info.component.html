@@ -1,0 +1,11 @@
+<div class="ip-info-container" [@newInfo]="showChange ? 'changed': 'normal'">
+    <h5 class="title">{{title}}</h5>
+    <p><b>IP:</b> {{ info?.ip }}</p>
+    <p><b>Country:</b> {{ info?.location.country }}</p>
+    <p><b>Region:</b> {{ info?.location.region }}</p>
+    <p><b>City:</b> {{ info?.location.city }}</p>
+    <p><b>Latitude:</b> {{ info?.location.lat }}</p>
+    <p><b>Longitude:</b> {{ info?.location.lng }}</p>
+    <p><b>Postal Code:</b> {{ info?.location.postalCode }}</p>
+    <p><b>Timezone:</b> {{ info?.location.timezone }}</p>
+</div>

@@ -1,0 +1,12 @@
+.map-container {
+    display: block;
+    border: black 2px solid;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+
+    agm-map {
+        margin: auto;
+        height: 500px;
+        width: 100%;
+    }
+}

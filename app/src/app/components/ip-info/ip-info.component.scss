@@ -1,0 +1,14 @@
+.ip-info-container {
+    border: black 2px solid;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+
+    h5 ~ p {
+        margin: 1px;
+        text-align: left;
+    }
+}

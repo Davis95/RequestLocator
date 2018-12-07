@@ -1,0 +1,5 @@
+<div class="map-header-container">
+    <app-ip-info class="source-info" [title]="'Your IP'" [info]="clientInfo"></app-ip-info>
+    <app-domain-query (queryDone)="onQueryDone($event)"></app-domain-query>
+    <app-ip-info class="dest-info" [title]="query ? query : 'Destination'" [info]="destInfo"></app-ip-info>
+</div>
